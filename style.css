@@ -594,6 +594,10 @@ blockquote {
 }
 
 /* Do not hyphenate entry title on tablet view and bigger. */
+.entry-title {
+  background: red;
+}
+
 @media only screen and (min-width: 768px) {
   .entry-title {
     hyphens: none;
@@ -1093,6 +1097,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li > a {
+  background: red;
   font-weight: 700;
   color: #0073aa;
   margin-right: 0.5rem;

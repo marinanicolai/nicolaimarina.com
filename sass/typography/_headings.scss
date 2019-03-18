@@ -152,6 +152,7 @@ blockquote {
 
 /* Do not hyphenate entry title on tablet view and bigger. */
 .entry-title {
+	background: red;
 	@include media(tablet) {
 		hyphens: none;
 	}
