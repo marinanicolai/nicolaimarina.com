@@ -231,6 +231,10 @@ function twentynineteen_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_style( 'fullpage-css', get_stylesheet_directory_uri() . '/css/jquery.fullpage.min.css');
+	wp_enqueue_script('fullpage-js', get_stylesheet_directory_uri() . '/js/jquery.fullpage.min.js', array('jquery'));
+	wp_enqueue_script('fullpage-initialize', get_stylesheet_directory_uri() . '/js/fullpage.initialize.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'twentynineteen_scripts' );
 
