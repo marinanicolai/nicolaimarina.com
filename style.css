@@ -3377,9 +3377,17 @@ body {
   z-index: 99;
 }
 
+#section0,
+#section2 {
+  background-size: cover;
+}
+
 #section0 {
   background-image: url("http://nicolaimarina.com/wp-content/themes/nicolaimarina/img/profile.jpg");
-  background-size: cover;
+}
+
+#section2 {
+  background-image: url("https://images.unsplash.com/photo-1517148815978-75f6acaaf32c");
 }
 
 /* Widgets */
