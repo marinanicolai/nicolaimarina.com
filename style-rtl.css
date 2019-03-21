@@ -3336,6 +3336,41 @@ body.page .main-navigation {
   margin-left: 1rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: red;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: yellow;
+}
+
+#menu {
+  position: fixed;
+  z-index: 99;
+}
+
 /* Widgets */
 .widget {
   margin: 0 0 1rem;
