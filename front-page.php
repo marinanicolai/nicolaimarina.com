@@ -16,7 +16,7 @@
 get_header();
 ?>
 <nav id="menu">
-  <a class="menu-links hideme" data-menuanchor="firstPage" href="#firstPage">section 1</a>
+  <a class="menu-links hideme" data-menuanchor="firstPage" href="#firstPage">Marina Nicolai</a>
   <a class="menu-links" data-menuanchor="secondPage" href="#secondPage">section 2</a>
   <a class="menu-links" data-menuanchor="3rdPage" href="#3rdPage">section 3</a>
   <a class="menu-links" data-menuanchor="4thpage" href="#4thpage">section 4</a>
