@@ -56,6 +56,10 @@
     z-index: 99;
   }
 
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);}
+
   #section0,
   #section2 {
     background-size: cover;
