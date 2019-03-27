@@ -25,11 +25,11 @@ get_header();
 
 
   <div id="fullpage">
-	<div class="section about-me" id="section0">
+	<div class="section about-me" id="section0">  
 	<p>I am a web developer who fell in love with programming in my free time.
 	I enjoy learning about new technologies and have passion for web development.
 	If I am not in front of my computer, I am spending time with loved ones, or 
-	taking bike rides when the weather is nice.</p>
+  taking bike rides when the weather is nice.</p>
 	</div>
 	<div class="section projects-section" id="section1">
   <h2 class="section-title">My Work</h2>
@@ -86,44 +86,40 @@ get_header();
           </div>        	  
 	  </div>
 	</div>
-  <div class="section"><h1>Learing in IT is a ongoing proc_get_status,
-    these are my resources which help me improve</h1>
-    <ul>
-        <li>  </li>
+  <div class="section"><h1>Learing in IT is a ongoing process,
+    these are some of my resources which I use to improve my sills</h1>
+    <ul class="study">
+        <li>Udemy</li>
+        <li>codeacademy web site</li>
+        <li>treehouse web site</li>
     </ul>
   </div>
 
 	<div class="section" id="section3">
     <div class="container">
-        <h2 class="title">Contact Me</h2>
         <p class="lead">Here is how you can reach me</p>     
         <div class="container">
         <div class="contact-info">
-          <div>
+          <div class="info">
             <i class="fas fa-envelope fa-2x"></i>
             <h3>Email</h3>
             <p>nicolaimarina@gmail.com</p>
           </div>
-          <div>
+          <div class="info">
             <i class="fas fa-address-card fa-2x"></i>
             <h3>Address</h3>
             <p>Fredericksburg VA</p>
           </div>
         </div>
       </div>
-      <div id="contact-c" class="bg-main py-4">
-      <div class="container">
-        <h1>Let's Start Your Next Project</h1>
-      </div>
-     </div>
      <div id="footer">
       <div class="footer-content container">
-        <p>Copyright &copy; 2019. All Rights Reserved</p>
+        <p id="right">Copyright &copy; 2019. All Rights Reserved</p>
         <div class="social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"><a></a></i>
+          <i class="fab fa-facebook"><a></a></i>
+          <i class="fab fa-instagram"><a></a></i>
+          <i class="fab fa-linkedin"><a></a></i>
         </div>
         </div>
       </div>
