@@ -2,11 +2,11 @@ jQuery(document).ready(function() {
 	jQuery('#fullpage').fullpage({
 		//options here
         //Scrolling
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
         sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth and last page'],
 //Scrolling
 css3: true,
 scrollingSpeed: 700,

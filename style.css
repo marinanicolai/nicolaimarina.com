@@ -3396,9 +3396,27 @@ body {
   z-index: 99;
 }
 
-.items {
+#section1 h2.section-title {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#section1 p {
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  color: black;
+}
+
+#section1 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#section1 .projects .project {
+  display: flex;
+  justify-content: space-around;
 }
 
 #section0,

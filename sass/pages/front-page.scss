@@ -56,10 +56,37 @@
     z-index: 99;
   }
 
-  .items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);}
+  .about-me {
+    // to replace id with class
+  }
 
+  #section1 {
+    h2.section-title{
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+    }
+    p{
+      text-align: center;
+      margin: auto;
+      padding: 0;
+      color: black;
+    }  
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+       .project{
+         display:flex;
+         justify-content: space-around;
+         p.project-description{
+
+         }
+         h2.project-gitlink{
+
+         }
+       }
+    }
+  }
   #section0,
   #section2 {
     background-size: cover;
