@@ -41,11 +41,9 @@ get_header();
             <div class="project-image">
               <img src="img/project/project1.png" alt="" />
             </div>
-            <div class="project-text">
-              <div class="project-text-wrap">
+            <div class="project-text">             
                 <p class="project-description">ONE</p>
-                <h2 class="project-gitlink">github.com</h2>
-              </div>
+                <h2 class="project-gitlink">github.com</h2>           
             </div>
           </div>
         
@@ -54,36 +52,31 @@ get_header();
               <img src="img/project/project2.png" alt="" />
             </div>
             <div class="project-text">
-              <div class="project-text-wrap">
                 <p class="project-description">TWO</p>
                 <h2 class="project-gitlink">github.com</h2>
               </div>
             </div>
-          </div>
-          
+               
           <div class="project">
             <div class="project-image">
               <img src="img/project/project3.png" alt="" />
             </div>
             <div class="project-text">
-              <div class="project-text-wrap">
                 <p class="project-description">THREE</p>
                 <h2 class="project-gitlink">github.com</h2>
               </div>
             </div>
-          </div>
-
+        
           <div class="project">
             <div class="project-image">
               <img src="img/project/project4.png" alt="" />
             </div>
             <div class="project-text">
-              <div class="project-text-wrap">
                 <p class="project-description">FOUR</p>
                 <h2 class="project-gitlink">github.com</h2>
               </div>
             </div>
-          </div>        	  
+                  	  
 	  </div>
 	</div>
   <div class="section"><h1>Learing in IT is a ongoing process,

@@ -68,28 +68,42 @@
       display: block;
       text-align: center;
       font-size: 2rem;
+      color:black;
     }
     p{
       text-align: center;
       margin: auto;
       padding: 0;
       color: black;
+      background-color: inherit;
     }  
     .projects {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
        .project{
-         display:flex;
-         justify-content: space-around;
-         p.project-description{
+        width: 45vw;
+        display: grid;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid black;
+        grid-template-columns: repeat(2, 1fr);
+        .project-image{
+          width:25vw;
+        }
+        .project-text{
 
-         }
+         p.project-description,
          h2.project-gitlink{
-
+         font-size:0.75rem;
+         color:white;
+         }
+         p.project-description{
+          text-align: left;
          }
        }
     }
   }
+}
   #section0,
   #section2 {
     background-size: cover;
