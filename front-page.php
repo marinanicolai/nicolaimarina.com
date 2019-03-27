@@ -79,12 +79,12 @@ get_header();
                   	  
 	  </div>
 	</div>
-  <div class="section"><h1>Learing in IT is a ongoing process,
-    these are some of my resources which I use to improve my sills</h1>
+  <div class="section" id="section2"><p>Learing in IT is an ongoing process,
+    these are some of my resources which I use to improve my skills</p>
     <ul class="study">
         <li>Udemy</li>
-        <li>codeacademy web site</li>
-        <li>treehouse web site</li>
+        <li>Codeacademy </li>
+        <li>Treehouse</li>
     </ul>
   </div>
 

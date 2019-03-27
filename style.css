@@ -3442,6 +3442,21 @@ body {
   text-align: left;
 }
 
+#section2 p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 40vw;
+}
+
+#section2 ul.study {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: turquoise;
+  text-transform: uppercase;
+  margin-right: 30vw;
+  margin-left: 43.5vw;
+}
+
 #section0,
 #section2 {
   background-size: cover;
