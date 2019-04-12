@@ -25,7 +25,7 @@ get_header();
 
 
   <div id="fullpage">
-	<div class="section about-me" id="section0">  
+	<div class="section about-me" id="section0" style="background-image: url(<?php the_field('first_image'); ?>)">  
 	<p>I am a web developer who fell in love with programming in my free time.
 	I enjoy learning about new technologies and have passion for web development.
 	If I am not in front of my computer, I am spending time with loved ones, or 
