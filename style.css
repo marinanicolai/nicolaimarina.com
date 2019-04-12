@@ -3455,6 +3455,8 @@ body {
   text-transform: uppercase;
   margin-right: 30vw;
   margin-left: 43.5vw;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #section0,
@@ -3504,7 +3506,7 @@ body {
 
 #section3 #footer {
   background: turquoise;
-  padding: 1rem;
+  padding: 0.5rem;
   position: absolute;
   bottom: 0;
   width: 100%;

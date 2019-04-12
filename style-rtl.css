@@ -3447,6 +3447,10 @@ body {
   text-align: center;
   color: turquoise;
   text-transform: uppercase;
+  margin-left: 30vw;
+  margin-right: 43.5vw;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 #section0,
