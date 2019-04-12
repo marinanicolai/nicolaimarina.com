@@ -83,7 +83,8 @@ get_header();
     these are some of my resources which I use to improve my skills</p>
     <ul class="study">
         <li>Udemy</li>
-        <li>Codeacademy </li>
+        <li>Codeacademy</li>
+        <li>Lynda.com</li>
         <li>Treehouse</li>
     </ul>
   </div>
