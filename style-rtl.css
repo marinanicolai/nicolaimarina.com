@@ -84,6 +84,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  margin-top: 0 !important;
 }
 
 /* Sections
@@ -3373,11 +3374,12 @@ nav#menu {
   width: 100vw;
   position: absolute;
   top: -20px;
+  background-color: white;
 }
 
 nav#menu a {
   padding: 1rem 1.5rem 0.5rem 1.5rem;
-  color: white;
+  color: black;
 }
 
 img {
@@ -3458,12 +3460,12 @@ body {
   background-size: cover;
 }
 
-#section0 {
-  background-image: url("http://nicolaimarina.com/wp-content/themes/nicolaimarina/img/profile.jpg");
-}
-
 #section2 {
   background-image: url("https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w500&q=60");
+}
+
+#section3 {
+  background-image: url("https://unsplash.com/photos/DR31squbFoA");
 }
 
 #section3 p.lead {

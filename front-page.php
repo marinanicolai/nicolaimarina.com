@@ -89,9 +89,9 @@ get_header();
     </ul>
   </div>
 
-	<div class="section" id="section3">
+	<div class="section" id="section3" style="background-image: url(<?php the_field('contact_image'); ?>)" >
     <div class="container">
-        <p class="lead">Here is how you can reach me</p>     
+          
         <div class="container">
         <div class="contact-info">
           <div class="info">

@@ -39,9 +39,10 @@
     width:100vw;
     position: absolute;
     top: -20px;
+    background-color: white;
     a{
       padding: 1rem 1.5rem 0.5rem 1.5rem;
-      color: white;
+      color: black;
       }
   }
   
@@ -132,6 +133,7 @@
   }
 
   #section3{
+    
     p.lead{
     text-align: center;
     margin: auto;

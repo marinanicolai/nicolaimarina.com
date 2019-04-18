@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: Twenty Nineteen
-Theme URI: https://github.com/WordPress/twentynineteen
-Author: the WordPress team
+Theme Name: Marina Nicolai
+Theme URI: https://github.com/marinanicolai/nicolaimarina.com
+Author: Marina Nicolai
 Author URI: https://wordpress.org/
 Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
 Requires at least: WordPress 4.9.6
@@ -3380,11 +3380,12 @@ nav#menu {
   width: 100vw;
   position: absolute;
   top: -20px;
+  background-color: white;
 }
 
 nav#menu a {
   padding: 1rem 1.5rem 0.5rem 1.5rem;
-  color: white;
+  color: black;
 }
 
 img {
@@ -3463,10 +3464,6 @@ body {
 #section0,
 #section2 {
   background-size: cover;
-}
-
-#section0 {
-  background-image: url("http://nicolaimarina.com/wp-content/themes/nicolaimarina/img/profile.jpg");
 }
 
 #section2 {
