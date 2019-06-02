@@ -49,7 +49,6 @@ get_header();
 
 					<?php endif; ?>
 
-
 					<div class="project-text">
 							<p class="project-description"><?php the_sub_field('project-description'); ?></p>
 							<h2>
