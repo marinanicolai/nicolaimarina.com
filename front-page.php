@@ -31,7 +31,8 @@ get_header();
 	If I am not in front of my computer, I am spending time with loved ones, or
   taking bike rides when the weather is nice.</p>
 	</div>
-	<div class="section projects-section" id="section1">
+
+	<div class="section projects-section" id="section1" style="background-image: url(<?php the_field('projects_image'); ?>)">
   	<h2 class="section-title">My Work</h2>
 		<p>Check out some of my projects</p>
 		<div class="projects">
