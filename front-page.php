@@ -25,58 +25,41 @@ get_header();
 
 
   <div id="fullpage">
-	<div class="section about-me" id="section0" style="background-image: url(<?php the_field('first_image'); ?>)">  
+	<div class="section about-me" id="section0" style="background-image: url(<?php the_field('first_image'); ?>)">
 	<p>I am a web developer who fell in love with programming in my free time.
 	I enjoy learning about new technologies and have passion for web development.
-	If I am not in front of my computer, I am spending time with loved ones, or 
+	If I am not in front of my computer, I am spending time with loved ones, or
   taking bike rides when the weather is nice.</p>
 	</div>
 	<div class="section projects-section" id="section1">
-  <h2 class="section-title">My Work</h2>
-		<p>
-		Check out some of my projects
-        </p>
+  	<h2 class="section-title">My Work</h2>
+		<p>Check out some of my projects</p>
+		<div class="projects">
+		<?php if(get_field('projects')): ?>
+				<?php while(has_sub_field('projects')): ?>
+
+				<div class="project">
+					<div class="project-image">
+						<img src="img/project/project1.png" alt="" />
+					</div>
+					<div class="project-text">
+							<p class="project-description"><?php the_sub_field('project-description'); ?></p>
+							<h2 class="project-gitlink"><a href="<?php the_sub_field('team_member_image'); ?>">URL</a></h2>
+					</div>
+				</div>
+
+				<?php endwhile; ?>
+
+		<?php endif; ?>
+		</div>
+
         <div class="projects">
           <div class="project">
-            <div class="project-image">
-              <img src="img/project/project1.png" alt="" />
-            </div>
-            <div class="project-text">             
-                <p class="project-description">ONE</p>
-                <h2 class="project-gitlink">github.com</h2>           
-            </div>
-          </div>
-        
-          <div class="project">
-            <div class="project-image">
-              <img src="img/project/project2.png" alt="" />
-            </div>
-            <div class="project-text">
-                <p class="project-description">TWO</p>
-                <h2 class="project-gitlink">github.com</h2>
-              </div>
-            </div>
-               
-          <div class="project">
-            <div class="project-image">
-              <img src="img/project/project3.png" alt="" />
-            </div>
-            <div class="project-text">
-                <p class="project-description">THREE</p>
-                <h2 class="project-gitlink">github.com</h2>
-              </div>
-            </div>
-        
-          <div class="project">
-            <div class="project-image">
-              <img src="img/project/project4.png" alt="" />
-            </div>
             <div class="project-text">
                 <p class="project-description">FOUR</p>
                 <h2 class="project-gitlink">github.com</h2>
               </div>
             </div>
-                  	  
 	  </div>
 	</div>
   <div class="section" id="section2"><p>Learing in IT is an ongoing process,
@@ -91,7 +74,7 @@ get_header();
 
 	<div class="section" id="section3" style="background-image: url(<?php the_field('contact_image'); ?>)" >
     <div class="container">
-          
+
         <div class="container">
         <div class="contact-info">
           <div class="info">
