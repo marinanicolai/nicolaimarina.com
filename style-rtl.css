@@ -3460,8 +3460,10 @@ body {
 }
 
 #section0,
-#section2 {
+#section2,
+.bg-image {
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #section2 {

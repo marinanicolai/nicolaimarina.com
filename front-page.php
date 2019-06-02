@@ -32,7 +32,7 @@ get_header();
   taking bike rides when the weather is nice.</p>
 	</div>
 
-	<div class="section projects-section" id="section1" style="background-image: url(<?php the_field('projects_image'); ?>)">
+	<div class="section bg-image projects-section" id="section1" style="background-image: url(<?php the_field('projects_image'); ?>)">
   	<h2 class="section-title">My Work</h2>
 		<p>Check out some of my projects</p>
 		<div class="projects">
@@ -75,7 +75,7 @@ get_header();
     </ul>
   </div>
 
-	<div class="section" id="section3" style="background-image: url(<?php the_field('contact_image'); ?>)" >
+	<div class="section bg-image" id="section3" style="background-image: url(<?php the_field('contact_image'); ?>)" >
     <div class="container">
 
         <div class="container">
