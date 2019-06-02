@@ -3343,7 +3343,7 @@ body.page .main-navigation {
 }
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background: #fff;
 }
@@ -3422,6 +3422,10 @@ body {
   margin: 1rem;
   border: 1px solid black;
   grid-template-columns: repeat(2, 1fr);
+}
+
+#section1 .projects .project h2 {
+  margin-bottom: 0 !important;
 }
 
 #section1 .projects .project .project-image {
