@@ -2,10 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby + Hooks',
     description: 'A demonstration of React Hooks + Gatsby',
-    author: 'Dustin Schau'
+    author: 'Dustin Schau',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,8 +26,8 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: []
-      }
+        plugins: [],
+      },
     },
     'gatsby-plugin-sharp',
     {
