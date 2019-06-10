@@ -4,11 +4,9 @@ import ReactFullpage from '@fullpage/react-fullpage'
 
 import Layout from '../layouts/index'
 import Portfolio from '../components/Portfolio'
-
 import SEO from '../components/seo'
 
-function IndexPage({ data }) {
-  const [name, setName] = useState('1234')
+const IndexPage = () => {
   return (
     <Layout>
       <SEO

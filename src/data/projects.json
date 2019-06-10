@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Personal website",
+    "description": "My personal website",
+    "technologies": ["React.js", "Gatsby.js"]
+  },
+  {
+    "name": "Corporate-style website",
+    "description": "description",
+    "url": "https://github.com/marinanicolai/corporate"
+  },
+  {
+    "name": "Recipe website",
+    "description": "description",
+    "url": "https://github.com/marinanicolai/twentynineteen-recipe"
+  }
+]
