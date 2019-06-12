@@ -2,20 +2,24 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons' // more here: https://github.com/FortAwesome/Font-Awesome/tree/master/js-packages/%40fortawesome/free-solid-svg-icons
+import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons' // more here: https://github.com/FortAwesome/Font-Awesome/tree/master/js-packages/%40fortawesome/free-solid-svg-icons
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons' // more here: https://github.com/FortAwesome/Font-Awesome/tree/master/js-packages/%40fortawesome/free-brands-svg-icons
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Projects from '../components/Projects'
+import Layout from '../../components/layout'
+import SEO from '../../components/seo'
+import Projects from '../../components/Projects'
 
-function SecondPage() {
+import PrintAndDownload from './PrintAndDownload'
+
+const Resume = () => {
   return (
     <Layout>
       <SEO
         title="Marina Nicolai - Resume"
         description="The second page, of course!"
       />
+
+      <PrintAndDownload />
 
       <div className="resume">
         <div id="contact-info" className="vcard">
@@ -39,7 +43,8 @@ function SecondPage() {
           </div>
 
           <p>
-            Cell: <span className="tel">540-322-7213</span>
+            <FontAwesomeIcon icon={faMobileAlt} className="mr-1" />{' '}
+            <span className="tel">540-322-7213</span>
             <br />
             <FontAwesomeIcon icon={faEnvelope} className="mr-1" />
             <a className="email" href="mailto:nicolaimarina@gmail.com">
@@ -141,4 +146,4 @@ function SecondPage() {
   )
 }
 
-export default SecondPage
+export default Resume

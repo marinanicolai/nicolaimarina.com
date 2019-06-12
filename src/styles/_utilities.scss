@@ -1,0 +1,39 @@
+@media print {
+  .page-break,
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  a {
+    &.no-reformat:after {
+      content: '';
+    }
+  }
+
+  abbr,
+  acronym {
+    &[title] {
+      &.no-reformat:after {
+        content: '';
+      }
+    }
+  }
+
+  .no-reformat {
+    abbr,
+    acronym,
+    a {
+      &:after {
+        content: '';
+      }
+    }
+  }
+}

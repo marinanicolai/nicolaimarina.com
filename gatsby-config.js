@@ -1,13 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Hooks',
+    title: 'Marina Nicolai',
     description: 'A demonstration of React Hooks + Gatsby',
-    author: 'Dustin Schau',
+    author: 'Marina Nicolai',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-less',
+      options: {
+        javascriptEnabled: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
