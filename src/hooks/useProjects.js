@@ -8,6 +8,7 @@ export const useProjects = () => {
           edges {
             node {
               name
+              technologies
             }
           }
         }

@@ -2,16 +2,26 @@
   {
     "name": "Personal website",
     "description": "My personal website",
-    "technologies": ["React.js", "Gatsby.js"]
+    "technologies": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "React.js",
+      "Gatsby.js",
+      "Responsive design",
+      "Printer-friendly resume"
+    ]
   },
   {
     "name": "Corporate-style website",
     "description": "description",
-    "url": "https://github.com/marinanicolai/corporate"
+    "url": "https://github.com/marinanicolai/corporate",
+    "technologies": ["test"]
   },
   {
     "name": "Recipe website",
     "description": "description",
-    "url": "https://github.com/marinanicolai/twentynineteen-recipe"
+    "url": "https://github.com/marinanicolai/twentynineteen-recipe",
+    "technologies": ["test"]
   }
 ]

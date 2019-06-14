@@ -7,11 +7,13 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons' // mor
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
-import Projects from '../../components/Projects'
+import { useProjects } from '../../hooks/useProjects'
 
 import PrintAndDownload from './PrintAndDownload'
 
 const Resume = () => {
+  const projects = useProjects()
+
   return (
     <Layout>
       <SEO
@@ -57,7 +59,6 @@ const Resume = () => {
 
         <dl>
           <dd className="clear" />
-          <Projects />
 
           <dt>Education</dt>
           <dd>
@@ -102,6 +103,27 @@ const Resume = () => {
           <dd className="clear" />
 
           <dt>Experience</dt>
+          {projects.map(({ name, technologies }, index) => (
+            <dd key={index}>
+              <h2>
+                {`${name} - `}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://nicolaimarina.com/"
+                >
+                  link
+                </a>
+              </h2>
+              <h3>Built using:</h3>
+              <ul>
+                {technologies.map(item => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </dd>
+          ))}
+
           <dd>
             <h2>
               Personal website -{' '}
@@ -110,6 +132,7 @@ const Resume = () => {
               </a>
               <span>October 2018 to March 2019</span>
             </h2>
+            <h3>Build using</h3>
             <ul>
               <li>Build using the HTMLS, CSS3, SASS.</li>
               <li>
@@ -141,7 +164,7 @@ const Resume = () => {
 
         <div className="clear" />
       </div>
-      <Link to="/">Go back to the homepage</Link>
+      {/* <Link to="/">Go back to the homepage</Link> */}
     </Layout>
   )
 }
