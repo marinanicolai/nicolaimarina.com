@@ -1,4 +1,12 @@
 # A basic redirect rule
 [[redirects]]
   from = "http://nicolaimarina.netlify.com/*"
-  to = "http://nicolaimarina.com/:splat 301!"
+  to = "http://nicolaimarina.com/:splat"
+ 
+    # The default HTTP status code is 301, but you can define a different one.
+  status = 301
+
+  # By default, redirects won't be applied if there's a file with the same 
+  # path as the one defined in the `from` property. Setting `force` to `true` 
+  # will make the redirect rule take precedence over any existing files.
+  force = true
