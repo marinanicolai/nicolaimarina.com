@@ -1,0 +1,4 @@
+# A basic redirect rule
+[[redirects]]
+  from = "http://nicolaimarina.netlify.com/*"
+  to = "http://nicolaimarina.com/:splat 301!"
