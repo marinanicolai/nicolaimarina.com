@@ -1,7 +1,7 @@
 # A basic redirect rule
 [[redirects]]
-  from = "http://nicolaimarina.netlify.com/*"
-  to = "http://nicolaimarina.com/:splat"
+  from = "https://nicolaimarina.netlify.com/*"
+  to = "https://nicolaimarina.com/:splat"
  
     # The default HTTP status code is 301, but you can define a different one.
   status = 301
