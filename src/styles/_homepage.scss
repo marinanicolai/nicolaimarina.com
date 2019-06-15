@@ -1,0 +1,82 @@
+@import 'mixins';
+
+#menu {
+  li {
+    display: inline-block;
+    padding-top: 8px;
+    a {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}
+
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
+
+.first {
+  background-image: url('../images/first_section.jpg');
+}
+
+.second {
+  background-image: url('../images/second_section.jpg');
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project {
+    width: 45vw;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.education {
+  background-image: url('../images/third_section.jpg');
+}
+
+.contact {
+  background-image: url('../images/contact_section.jpg');
+  $color_1: black;
+  $color_2: turquoise;
+  $font_family_1: fantasy;
+
+  p {
+    text-align: center;
+    margin: auto;
+    font-family: $font_family_1;
+    color: $color_1;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    .info {
+      @include borderRadius;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.6);
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      h3 {
+        color: $color_2;
+      }
+      p {
+        color: white;
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}

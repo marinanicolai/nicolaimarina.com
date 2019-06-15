@@ -2,6 +2,7 @@
   {
     "name": "Personal website",
     "description": "My personal website",
+    "url": "https://nicolaimarina.com",
     "technologies": [
       "JavaScript",
       "HTML5",
