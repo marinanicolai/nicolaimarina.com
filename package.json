@@ -26,6 +26,7 @@
     "gatsby-transformer-remark": "^2.1.16",
     "gatsby-transformer-sharp": "^2.1.9",
     "less": "^3.9.0",
+    "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
@@ -43,6 +44,7 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
+    "new-post": "node utils/new-post",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -50,9 +52,16 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
   "devDependencies": {
+    "chalk": "^2.4.2",
+    "dedent": "^0.7.0",
     "eslint-config-react-app": "^4.0.1",
     "eslint-plugin-react-hooks": "^1.6.0",
     "gatsby-plugin-sass": "^2.0.11",
+    "inquirer": "^6.3.1",
+    "lodash.kebabcase": "^4.1.1",
+    "lodash.startcase": "^4.4.0",
+    "log-symbols": "^3.0.0",
+    "moment": "^2.24.0",
     "node-sass": "^4.12.0"
   }
 }
