@@ -5,12 +5,14 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import Layout from '../layouts'
 import SEO from '../components/seo'
 import Menu from './Homepage/Menu'
+import Bio from './Homepage/Bio'
+import LatestPosts from './Homepage/LatestPosts'
 import Portfolio from './Homepage/Portfolio'
 import Education from './Homepage/Education'
 import Contact from './Homepage/Contact'
 
-const IndexPage = () => {
-  // const [moveTo, setMoveTo] = useState(null)
+const IndexPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout>
@@ -20,7 +22,6 @@ const IndexPage = () => {
       />
       <Menu />
       <ReactFullpage
-        debug
         menu="#menu"
         anchors={['aboutMe', 'projects', 'education', 'contact']}
         navigation={true}
@@ -28,14 +29,9 @@ const IndexPage = () => {
           return (
             <>
               <ReactFullpage.Wrapper>
-                <div className="section first">
-                  <div className="cta">
-                    I am a web developer who fell in love with programming in my
-                    free time. I enjoy learning about new technologies and have
-                    passion for web development. If I am not in front of my
-                    computer, I am spending time with loved ones, or taking bike
-                    rides when the weather is nice.
-                  </div>
+                <div className="section about-me">
+                  <Bio />
+                  <LatestPosts posts={posts} />
                 </div>
                 <Portfolio />
                 <Education />
@@ -52,15 +48,23 @@ const IndexPage = () => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  {
-    posts: allMarkdownRemark {
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          frontmatter {
-            title
-          }
+          excerpt
           fields {
             slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
           }
         }
       }
