@@ -31,6 +31,7 @@ const LatestPosts = ({ posts }) => {
             </div>
           )
         })}
+      <Link to="/blog">All posts</Link>
     </Wrapper>
   )
 }
