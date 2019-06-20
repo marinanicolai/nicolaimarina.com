@@ -103,7 +103,7 @@ const Resume = () => {
           <dd className="clear" />
 
           <dt>Experience</dt>
-          {projects.map(({ name, technologies }, index) => (
+          {/* {projects.map(({ name, technologies }, index) => (
             <dd key={index}>
               <h2>
                 {`${name} - `}
@@ -122,7 +122,7 @@ const Resume = () => {
                 ))}
               </ul>
             </dd>
-          ))}
+          ))} */}
 
           <dd>
             <h2>
